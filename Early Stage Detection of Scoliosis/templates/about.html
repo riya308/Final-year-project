@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Scoliosis Classifiaction</title>
+    <link rel="icon" href="static/img/logo.png" type="image/icon type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="static/lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white pr-3" href="">FAQs</a>
+                    <span class="text-white">|</span>
+                    <a class="text-white px-3" href="">Help</a>
+                    <span class="text-white">|</span>
+                    <a class="text-white pl-3" href="">Support</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-3" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-3" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-3" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">Early Stage Scoliosis</span> Detection</h1>
+                </a>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span
+                        class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="{{url_for('index')}}" class="nav-item nav-link">Home</a>
+                    <a href="{{url_for('about')}}" class="nav-item nav-link active">About</a>
+                    <a href="{{url_for('Prediction')}}" class="nav-item nav-link">Prediction</a>
+                    <a href="{{url_for('graph')}}" class="nav-item nav-link">Accuracy</a>
+
+
+
+                </div>
+                <a href="contact.html" class="nav-item nav-link"></a>
+            </div>
+            <a href="{{url_for('Prediction')}}" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Start Prediction</a>
+    </div>
+    </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- About Start -->
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                <h4 class="text-secondary mb-3">About Us</h4>
+                <h1 class="display-4 mb-4"><span class="text-primary">Early Stage</span> <span
+                        class="text-secondary">Scoliosis Detection</span></h1>
+                <h5 class="text-muted mb-3" align="justify">In this project we have used deep learning model such as CNN and SVM model to predict the Scoliosis class.</h5>
+                <p class="mb-4" align="justify">Scoliosis is the most common disease which is 
+                    mainly identified from patient spine X-ray images. It is mainly 
+                    diagnosed based on sideways curvature image modality. In 
+                    scoliosis diagnosis detection, currently the treatment for 
+                    scoliosis is based on spinal assessment manual study which has 
+                    some limitations like it is very tedious, time-consuming and 
+                    cost effective. Scoliosis diagnosis is a critical task in initial 
+                    stages based on patient history records or on captured patient 
+                    X-ray spine images.</p>
+                <p class="mb-4" align="justify"> So our research work is carried out for 
+                    detecting scoliosis in effective way by analyzing the quality of 
+                    input X-ray images of the patient suffering from scoliosis. To 
+                    overcome few limitations and for early stage predictive 
+                    analysis detection of scoliosis, we develop a point-based 
+                    automated method at different regions of spine which provides 
+                    accurate results using various classification algorithms in this 
+                    research paper. Predictive analysis is mainly analyzed using 
+                    efficient and essential classification algorithms like Linear 
+                    Regression (LR) and Support Vector Machine (SVM) and the 
+                    performance metrics like Accuracy (A) and Elapsed Time (ET) 
+                    are compared to benefit the patients suffering from scoliosis 
+                    with less time, low cost and by improving the quality of input 
+                    images.</p>
+                    <p class="mb-4" align="justify">Scoliosis is represented as 3D (Three-dimensional) in 
+                        structure of spine part of human body. One of the most 
+                        common forms of scoliosis is AIS (Adolescent Idiopathic 
+                        Scoliosis). This scoliosis form mainly begins from early 
+                        stage and effects 5% of youngsters and also the cause of 
+                        75% - 80% of scoliosis cannot be identified with certainty 
+                        which affects our quality of life functioning stages [1-3]. 
+                        Based on the input spine image curve or shape or its 
+                        structure, the scoliosis is classified as Normal shape, C-Curve shaped and S-Curve shaped.
+                        Detection of scoliosis in early stages has several methods 
+                        but they are lacking in predictive analysis of accuracy 
+                        severity. To determine the predictive analysis level of 
+                        scoliosis severity, medical images like X-ray images are 
+                        preferred for detecting the scoliosis analysis and scoliosis 
+                        measurement is carried out by calculating the Cobb angle 
+                        (in degrees). If the Cobb angle is less than 10 degrees, it is 
+                        recommended as no scoliosis, if the Cobb angle is between 
+                        10 degrees – 45 degrees, it is recommended as mild 
+                        scoliosis and if the Cobb angle is greater than 45 degrees, it 
+                        is recommended for further surgery. But predicting Cobb 
+                        angle measurement varies from one doctor to another based 
+                        on their observation </p>
+                <ul class="list-inline">
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>High Accuracy</h5>
+                    </li>
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Accurate Prediction</h5>
+                    </li>
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Less Time Consuming</h5>
+                    </li>
+                </ul>
+                <a href="https://en.wikipedia.org/wiki/Scoliosis" class="btn btn-lg btn-primary mt-3 px-4">Learn More</a>
+            </div>
+            <div class="col-lg-5">
+                <div class="row px-3">
+                    <div class="col-12 p-0">
+                        <img class="img-fluid w-100" src="static/img/about-1.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="static/img/about-2.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="static/img/download.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="static/img/image-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <!-- <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/feature.jpg" alt="">
+                </div>
+                <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+                    <h4 class="text-secondary mb-3">Why Choose Us?</h4>
+                    <h1 class="display-4 mb-4"><span class="text-primary">Special Care</span> On Pets</h1>
+                    <p class="mb-4">Dolor lorem lorem ipsum sit et ipsum. Sadip sea amet diam sed ut vero no sit. Et elitr stet sed sit sed kasd. Erat duo eos et erat sed diam duo</p>
+                    <div class="row py-2">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="flaticon-cat font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <h5 class="text-truncate m-0">Best In Industry</h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <h1 class="flaticon-doctor font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <h5 class="text-truncate m-0">Emergency Services</h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <h1 class="flaticon-care font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <h5 class="text-truncate m-0">Special Care</h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <h1 class="flaticon-dog font-weight-normal text-secondary m-0 mr-3"></h1>
+                                <h5 class="text-truncate m-0">Customer Support</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Features End -->
+
+
+    <!-- Team Start
+    <div class="container mt-5 pt-5 pb-3">
+        <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">Team Member</h4>
+            <h1 class="display-4 m-0">Meet Our <span class="text-primary">Team Member</span></h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="static/img/team-1.jpg" alt="">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5>Mollie Ross</h5>
+                            <i>Founder & CEO</i>
+                        </div>
+                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="static/img/team-2.jpg" alt="">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5>Jennifer Page</h5>
+                            <i>Chef Executive</i>
+                        </div>
+                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="static/img/team-3.jpg" alt="">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5>Kate Glover</h5>
+                            <i>Doctor</i>
+                        </div>
+                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team card position-relative overflow-hidden border-0 mb-4">
+                    <img class="card-img-top" src="static/img/team-4.jpg" alt="">
+                    <div class="card-body text-center p-0">
+                        <div class="team-text d-flex flex-column justify-content-center bg-light">
+                            <h5>Lilly Fry</h5>
+                            <i>Trainer</i>
+                        </div>
+                        <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary rounded-circle text-center px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">Algorithm Deatils</h4>
+                <h1 class="display-4 m-0"><span class="text-primary">Algorithm Detials Which have been used in this </span> Project
+                </h1>
+            </div>
+
+
+
+
+
+
+
+            <div class="row pb-3">
+                <div class="col-md-12 col-lg-8 mb-8">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5" style="width: 1096px;">
+                        <img class="img-fluid w-100" src="static/img/mobile.jpg" alt="">
+                        <h3 class="mb-3">CNN (MobileNet)</h3>
+                        <p align = "justify">As the name applied, the MobileNet model is designed to be used in mobile applications, and it is TensorFlow’s first mobile computer vision model.
+                            MobileNet uses depthwise separable convolutions. It significantly reduces the number of parameters when compared to the network with regular convolutions with the same depth in the nets. This results in lightweight deep neural networks.</p>
+                        <p align = "justify"> A depthwise separable convolution is made from two operations.</p>
+                        <p align = "justify">1. Depthwise convolution.</p>
+                        <p align = "justify">2. Pointwise convolution.</p>
+                        <p align = "justify">MobileNet is a class of CNN that was open-sourced by Google, and therefore, this gives us an excellent starting point for training our classifiers that are insanely small and insanely fast.</p>
+                        <img class="img-fluid w-100" src="static/img/img.jpg" alt="">
+                        <a class="text-uppercase font-weight-bold" href="https://medium.com/analytics-vidhya/image-classification-with-mobilenet-cc6fbb2cd470">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8 mb-8">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5" style="width: 1096px;">
+                        <img class="img-fluid w-100" src="static/img/sanu3.jpg" alt="">
+                    <h3 class="mb-3">CNN - Convolution Neural Network</h3>
+                    <p align = "justify">Convolutional Neural Networks come under the subdomain of Machine Learning which is Deep Learning. Algorithms under Deep Learning process information the same way the human brain does, but obviously on a very small scale, since our brain is too complex (our brain has around 86 billion neurons).</p>
+                    <p align = "justify">Image classification involves the extraction of features from the image to observe some patterns in the dataset. Using an ANN for the purpose of image classification would end up being very costly in terms of computation since the trainable parameters become extremely large.</p>
+
+                    <p align = "justify">For example, if we have a 50 X 50 image of a cat, and we want to train our traditional ANN on that image to classify it into a dog or a cat the trainable parameters become –
+                        (50*50) * 100 image pixels multiplied by hidden layer + 100 bias + 2 * 100 output neurons + 2 bias = 2,50,302</p>
+                        
+                    <p align = "justify">We use filters when using CNNs. Filters exist of many different types according to their purpose.</p>
+                    <img class="img-fluid w-100" src="static/img/sanu.jpg" alt="">
+                    <p align = "justify">Examples of different filters and their effects
+
+                        Filters help us exploit the spatial locality of a particular image by enforcing a local connectivity pattern between neurons.
+                        
+                        Convolution basically means a pointwise multiplication of two functions to produce
+                        a third function. Here one function is our image pixels matrix and another is our filter. We slide the filter over the image and get the dot product of the two matrices. The resulting matrix is called an “Activation Map” or “Feature Map”.</p>
+
+                    <img class="img-fluid w-100" src="static/img/sanu1.jpg" alt="">
+                    <p align = "justify" font-weight : bold;>Using a vertical filter here to convolve a 6X6 image
+
+                        There are multiple convolutional layers extracting features from the image and finally the output layer.</p>
+
+                    <img class="img-fluid w-100" src="static/img/sanu2.jpg" alt="">
+                    <p></p>
+                    <a class="text-uppercase font-weight-bold" href="https://www.analyticsvidhya.com/blog/2021/01/image-classification-using-convolutional-neural-networks-a-step-by-step-guide/">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-12 col-lg-8 mb-8">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5" style="width: 1096px;">
+                        <img class="img-fluid w-100" src="static/img/7.png" alt="">
+                        <h3 class="mb-3">Support Vector Machine (SVM)</h3>
+                        <p align = "justify">Generally, Support Vector Machines(SVM) is considered to be a classification approach but it can be employed in both types of classification and regression problems. It can easily handle multiple continuous and categorical variables. SVM constructs a hyperplane in multidimensional space to separate different classes. SVM generates optimal hyperplane in an iterative manner, which is used to minimize an error. The core idea of SVM is to find a maximum marginal hyperplane(MMH) that best divides the dataset into classes.</p>
+                        <p align = "justify"> SVM is a very good algorithm for doing classification. It’s a supervised learning algorithm that is mainly used to classify data into different classes. SVM trains on a set of label data. The main advantage of SVM is that it can be used for both classification and regression problems. SVM draws a decision boundary which is a hyperplane between any two classes in order to separate them or classify them. SVM  also used in Object Detection and image classification.</p>
+                    
+                        <p align = "justify">Support Vectors - 
+                            Support vectors are the data points, which are closest to the hyperplane. These points will define the separating line better by calculating margins. These points are more relevant to the construction of the classifier.</p>
+                        <p align = "justify"> Margin - 
+                                A margin is a gap between the two lines on the closest class points. This is calculated as the perpendicular distance from the line to support vectors or closest points. If the margin is larger in between the classes, then it is considered a good margin, a smaller margin is a bad margin.</p>
+                        <p align = "justify">The main objective is to segregate the given dataset in the best possible way. The distance between the either nearest points is known as the margin. The objective is to select a hyperplane with the maximum possible margin between support vectors in the given dataset. SVM searches for the maximum marginal hyperplane in the following steps:</p>
+                        <p align = "justify">1. Generate hyperplanes that segregate the classes in the best way. Left-hand side figure showing three hyperplanes black, blue, and orange. Here, the blue and orange have higher classification errors, but the black is separating the two classes correctly.</p>
+                        <p align = "justify">2. Select the right hyperplane with the maximum segregation from the either nearest data points as shown in the right-hand side figure.</p>
+                        
+                        <img class="img-fluid w-100" src="static/img/8.png" alt="">
+                        <a class="text-uppercase font-weight-bold" href="https://www.analyticsvidhya.com/blog/2021/06/build-an-image-classifier-with-svm/">Read More</a>
+                    </div>
+                </div>
+                                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Services Start -->
+    <div class="container-fluid bg-light pt-5">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">Package Details</h4>
+                <h1 class="display-4 m-0"><span class="text-primary">Important packages used in this </span> Project
+                </h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <img class="img-fluid w-100" src="static/img/tensorflow.jpg" alt="">
+                        <h3 class="mb-3">Tensorflow</h3>
+                        <p>TensorFlow is a free and open-source software library for machine learning and artificial
+                            intelligence. It can be used across a range of tasks but has a particular focus on training
+                            and inference of deep neural networks.</p>
+                        <a class="text-uppercase font-weight-bold" href="https://www.tensorflow.org/learn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <img class="img-fluid w-100" src="static/img/logo1.jpg" alt="">
+                        <h3 class="mb-3">Keras</h3>
+                        <p>Keras is an open-source software library that provides a Python interface for artificial
+                            neural networks. Keras acts as an interface for the TensorFlow library.
+
+                            Up until version 2.3, Keras supported multiple backends.</p>
+                        <a class="text-uppercase font-weight-bold" href="https://keras.io/">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <img class="img-fluid w-100" src="static/img/3.jpg" alt="">
+                        <h3 class="mb-3">pandas</h3>
+                        <p>Pandas is an open source Python package that is most widely used for data science/data
+                            analysis and machine learning tasks.It is built on top of another package named Numpy, which
+                            provides support for multi-dimensional arrays</p>
+                        <a class="text-uppercase font-weight-bold"
+                            href="https://mode.com/python-tutorial/libraries/pandas/">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <img class="img-fluid w-100" src="static/img/flask.jpg" alt="">
+                        <h3 class="mb-3">Flask</h3>
+                        <p>Flask is a micro web framework written in Python. It is classified as a microframework ...
+                        </p>
+                        <a class="text-uppercase font-weight-bold"
+                            href="https://flask.palletsprojects.com/en/2.1.x/">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <img class="img-fluid w-100" src="static/img/numpy.jpg" alt="">
+                        <h3 class="mb-3">NumPy</h3>
+                        <p>NumPy is a Python library used for working with arrays. It also has functions for .... </p>
+                        <a class="text-uppercase font-weight-bold" href="https://numpy.org/">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="d-flex flex-column text-center bg-white mb-2 p-3 p-sm-5">
+                        <img class="img-fluid w-100" src="static/img/logo2.jpg" alt="">
+                        <h3 class="mb-3">MatplotLib</h3>
+                        <p> Matplotlib is a plotting library for the Python programming language and its numerical
+                            mathematics .</p>
+                        <a class="text-uppercase font-weight-bold" href="https://matplotlib.org/">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+        <div class="col-lg-4 col-md-12 mb-5">
+            <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Early Stage</span> Scoliosis Detection</h1>
+            <p class="m-0" align = "justify">Scoliosis is the most common disease which is 
+                mainly identified from patient spine X-ray images. It is mainly 
+                diagnosed based on sideways curvature image modality. In 
+                scoliosis diagnosis detection, currently the treatment for 
+                scoliosis is based on spinal assessment manual study which has 
+                some limitations like it is very tedious, time-consuming and 
+                cost effective. Scoliosis diagnosis is a critical task in initial 
+                stages based on patient history records or on captured patient 
+                X-ray spine images.</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Popular Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="{{url_for('index')}}"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="{{url_for('about')}}"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                      
+                    
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Newsletter</h5>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control border-0" placeholder="Your Name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control border-0" placeholder="Your Email" required="required" />
+                        </div>
+                        <div>
+                            <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+    <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white">
+                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+            <ul class="nav d-inline-flex">
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">Help</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="static/lib/easing/easing.min.js"></script>
+    <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="static/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
